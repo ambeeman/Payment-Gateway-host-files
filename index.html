@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Payment Gateway</h1>
+    <form id="payment-form">
+        <label for="amount">Amount (in BRL):</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="method">Payment Method:</label>
+        <select id="method" name="method" required>
+            <option value="pix">PIX</option>
+            <option value="credit_card">Credit Card</option>
+        </select>
+        <button type="submit">Pay Now</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
